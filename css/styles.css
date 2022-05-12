@@ -617,7 +617,7 @@ body {
 }
 
 .offers-item {
-  display: block;
+  display: grid;
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: #ffffff;
