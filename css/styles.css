@@ -104,21 +104,25 @@ body {
   margin-left: auto;
 }
 
-.header-soc-link {
+.header-soc-icon {
   margin-right: 10px;
   fill: #757575;
 }
 
-.header-soc-link:hover .header-soc-icon {
-  fill: var(--header-color-logo);
+.header-mailto:hover .header-soc-icon {
+  fill: currentColor;
 }
 
-.header-soc-link:focus .header-soc-icon {
-  fill: var(--header-color-logo);
+.header-mailto:focus .header-soc-icon {
+  fill: currentColor;
 }
 
-.header-soc-link:not(:first-child) {
-  margin-left: 30px;
+.header-tel:hover .header-soc-icon {
+  fill: currentColor;
+}
+
+.header-tel:focus .header-soc-icon {
+  fill: currentColor;
 }
 
 .header-tel,
@@ -128,6 +132,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-color-contact);
+}
+
+.header-mailto {
+  margin-right: 30px;
 }
 
 .header-tel:hover,
@@ -153,7 +161,11 @@ body {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-  background-image: url(../images/meeting.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/meeting.jpg);
 }
 
 .hero-title {
